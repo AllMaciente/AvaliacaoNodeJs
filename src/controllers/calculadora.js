@@ -22,7 +22,7 @@ class ControllerCalculadora {
       const result = ServiceCalculadora.Somar(numb1, numb2);
       res.json({ result });
     } catch (e) {
-      res.status(500).json({ msg: e.message });
+      res.status(400).json({ msg: e.message });
     }
   }
   Diminuir(req, res) {
@@ -31,7 +31,7 @@ class ControllerCalculadora {
       const result = ServiceCalculadora.Diminuir(numb1, numb2);
       res.json({ result });
     } catch (e) {
-      res.status(500).json({ msg: e.message });
+      res.status(400).json({ msg: e.message });
     }
   }
   Multiplicar(req, res) {
@@ -40,7 +40,7 @@ class ControllerCalculadora {
       const result = ServiceCalculadora.Multiplicar(numb1, numb2);
       res.json({ result });
     } catch (e) {
-      res.status(500).json({ msg: e.message });
+      res.status(400).json({ msg: e.message });
     }
   }
   Dividir(req, res) {
@@ -49,7 +49,7 @@ class ControllerCalculadora {
       const result = ServiceCalculadora.Dividir(numb1, numb2);
       res.json({ result });
     } catch (e) {
-      res.status(500).json({ msg: e.message });
+      res.status(400).json({ msg: e.message });
     }
   }
   Potencia(req, res) {
@@ -58,7 +58,7 @@ class ControllerCalculadora {
       const result = ServiceCalculadora.Potencia(numb1, numb2);
       res.json({ result });
     } catch (e) {
-      res.status(500).json({ msg: e.message });
+      res.status(400).json({ msg: e.message });
     }
   }
   Raiz(req, res) {
@@ -67,7 +67,7 @@ class ControllerCalculadora {
       const result = ServiceCalculadora.Raiz(numb1, numb2);
       res.json({ result });
     } catch (e) {
-      res.status(500).json({ msg: e.message });
+      res.status(400).json({ msg: e.message });
     }
   }
 }
