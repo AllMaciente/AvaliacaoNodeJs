@@ -4,7 +4,8 @@
   "description": "Api Calculadora (REST)",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "dev": "node --watch --no-warnings index.js"
   },
   "author": "",
   "license": "ISC",
